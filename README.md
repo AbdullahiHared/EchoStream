@@ -1,4 +1,4 @@
-# Project Name: Streaming Site
+# Project Name: Echo Stream
 
 ## Overview
 This project aims to create a personalized streaming site where users can enjoy a variety of content, including vocals, Quran recitations, podcasts covering various topics, comedy, and more.
