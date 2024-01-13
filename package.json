@@ -1,6 +1,15 @@
 {
-  "name": "Echo-stream",
+  "name": "echo-stream",
   "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
   "dependencies": {
+    "puppeteer": "^21.7.0"
   }
 }
