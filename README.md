@@ -16,11 +16,8 @@ As of now, this project is intended for personal use and will not be made public
 4. Start the streaming site application.
 
 ## Getting Help
-If you encounter any issues or have questions about the project, feel free to reach out by sending a message to **echostream@gmail.com**.
+If you encounter any issues or have questions about the project, feel free to reach out by sending a message to **echostream.info@gmail.com**.
 
 ## Project Maintainers
 - Abdullahi Hared
 - Muhammad
-
-## Contributions
-Contributions to the project are currently managed by Abdullahi Hared and Muhammad. If you are interested in contributing, please contact them for further information.
