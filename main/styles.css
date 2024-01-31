@@ -1,0 +1,14 @@
+
+body {
+ background-color:black;
+}
+
+button {
+    background:transparent;
+    border:none;
+}
+
+
+svg {
+    fill:red;
+}
