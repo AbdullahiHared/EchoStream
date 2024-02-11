@@ -1,6 +1,16 @@
 
 body {
- background-color:black;
+ background-color:white;
+}
+
+.navbars {
+    padding-bottom:10px;
+    border-bottom: 1px solid black;
+    margin-bottom:10px;
+}
+
+.logo, li > img{
+    margin-left:100px;
 }
 
 button {
@@ -8,7 +18,53 @@ button {
     border:none;
 }
 
+img:hover {
+    cursor:pointer;
+}
 
-svg {
-    fill:red;
+.content {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    align-content:center;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.chapterSection {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    padding:10px;
+    gap:40%;
+    border:1px solid black;
+    width:30vw;
+    height:10vh;
+}
+
+ /*.chapterSection:hover, .chapterSection:before{
+    background-color:black;
+    color:white;
+    border-radius:10px;
+} */
+
+.chapterSection > img:hover {
+    fill:#ffff;
+}
+
+.playingSection {
+    display:none;
+    background-color:blue;
+    color:white;
+    font-weight:bold;
+    height:10vh;
+    text-align: center;
+    padding: 10px;
+    position: sticky;
+    bottom:1%; /* Adjust this value as needed */
+}
+
+.currentTrack {
+    background-color:blue;
+    color:white;
 }
