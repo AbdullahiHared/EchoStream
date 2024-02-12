@@ -1,4 +1,4 @@
-const luhaidanAudios = [
+    export const luhaidanAudios = [
     {
         "chapterNumber": "001",
         "chapterName": "al-fatihah",
@@ -569,30 +569,5 @@ const luhaidanAudios = [
         "chapterName": "an-nas",
         "audioLink": "https://server8.mp3quran.net/lhdan/114.mp3"
     },
-]
+];
 
-const content = document.querySelector('.content');
-const currentTrack = document.querySelector('.currentTruck');
-
-luhaidanAudios.forEach((surah, index) => {
-    const chapterSection = document.createElement('div');
-    chapterSection.classList.add('chapterSection');
-    chapterSection.innerHTML = `
-        <div class="info">
-            <h2>Number: ${surah.chapterNumber}</h2>
-            <div>Name: ${surah.chapterName}</div>
-        </div>
-        <img class="audioIcon" src="/main/images/play(1).svg" alt="Icon for playing the audio">
-    `;
-
-    const audioPlayer = chapterSection.querySelector('.audioIcon');
-    const currentTrack = document.querySelector('.playingSection > audio');
-    const playingSection  = document.querySelector('.playingSection');
-    audioPlayer.addEventListener('click', function () {
-        currentTrack.src = surah.audioLink;
-        playingSection.style.display = "block"
-        currentTrack.play();
-    });
-
-    content.appendChild(chapterSection);
-});
