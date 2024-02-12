@@ -1,26 +1,25 @@
 
 body {
- background-color:white;
+    background-color:#2C5364;
 }
 
-.navbars {
-    padding-bottom:10px;
-    border-bottom: 1px solid black;
-    margin-bottom:10px;
+.mainContainer {
+    display:grid;
+    grid-template-columns:repeat(auto-fit, 1fr);
+}
+
+header {
+    background-color:#ffff;
+    height:40vh;
+    width:25vw;
+    border-radius:10px;
+    margin:20px;
 }
 
 .logo, li > img{
-    margin-left:100px;
+    margin-left:20px;
 }
 
-button {
-    background:transparent;
-    border:none;
-}
-
-img:hover {
-    cursor:pointer;
-}
 
 .content {
     display:flex;
@@ -36,25 +35,59 @@ img:hover {
     flex-direction:row;
     align-items:center;
     padding:10px;
-    gap:40%;
-    border:1px solid black;
+
     width:30vw;
     height:10vh;
+    border-radius:10%;
+    background-color:#fff;
 }
 
- /*.chapterSection:hover, .chapterSection:before{
-    background-color:black;
-    color:white;
-    border-radius:10px;
+.info {
+    display:flex;
+    flex-direction:column;
+}
+
+.info > h2 {
+    color:green;
+}
+
+/*.chapterSection:hover, .chapterSection:before{
+   background-color:black;
+   color:white;
+   border-radius:10px;
 } */
 
 .chapterSection > img:hover {
     fill:#ffff;
 }
 
+.playingSection {
+    font-weight:bold;
+    height:10vh;
+    width:40vw;
+    text-align: center;
+    padding: 10px;
+    position: sticky;
+    margin-left:30%;
+    bottom:1%; /* Adjust this value as needed */
+}
+
 .audio-player {
-    width: 400px;
-    margin: 20px;
+    display:flex;
+    gap:10px;
+    background-color:blue;
+    color:white;
+    width:400px;
+    margin-left:36%;
+    position:sticky;
+    bottom:1%;
+    justify-content:center;
+    align-content:center;
+    align-items:center;
+    text-align:center;
+    padding:10px 5px;
+    border-radius:10%;
+
 }
 
 .controls {
@@ -74,8 +107,13 @@ img:hover {
     width: 0;
     height: 100%;
     background-color: #4caf50;
+    border-radius:10px;
 }
 
 #current-time, #total-time {
     margin-top: 10px;
+}
+
+audio {
+    display:none;
 }
