@@ -9,19 +9,22 @@ const currentTimeDisplay = document.getElementById("current-time");
 const totalTimeDisplay = document.getElementById("total-time");
 let isPlaying = false;
 
+function audioDisplayer (reciter) {
+
+}
 luhaidanAudios.forEach((surah, index) => {
     const chapterSection = document.createElement('div');
     chapterSection.classList.add('chapterSection');
     chapterSection.innerHTML = `
-        <div class="info">
-            <h2>Number: ${surah.chapterNumber}</h2>
-            <div>Name: ${surah.chapterName}</div>
-        </div>
-        <img class="audioIcon" src="/main/images/play(1).svg" alt="Icon for playing the audio">
+ <img class="audioIcon" src="/main/images/play(1).svg" alt="Icon for playing the audio">
+     
+        <p> Surah: ${surah.chapterName}</p>
+       <p> [${surah.chapterNumber}]</p>
     `;
-
+    const currentPlaying = document.querySelector('.currentPlaying');
     const audioPlayer = chapterSection.querySelector('.audioIcon');
     audioPlayer.addEventListener('click', function () {
+        currentPlaying.textContent = "Listening to " + surah.chapterName;
         currentTrack.src = surah.audioLink;
         currentTrack.play();
         isPlaying = true;
@@ -56,8 +59,9 @@ currentTrack.addEventListener("timeupdate", () => {
     const totalSeconds = Math.floor(duration % 60);
 
     currentTimeDisplay.textContent = `${currentMinutes}:${currentSeconds < 10 ? '0' : ''}${currentSeconds}`;
-    totalTimeDisplay.textContent = `${totalMinutes}:${totalSeconds < 10 ? '0' : ''}${totalSeconds}`;
+    totalTimeDisplay.textContent = "/" + `${totalMinutes}:${totalSeconds < 10 ? '0' : ''}${totalSeconds}`;
 
     const progress = (currentTime / duration) * 100;
     progressBar.style.width = `${progress}%`;
 });
+

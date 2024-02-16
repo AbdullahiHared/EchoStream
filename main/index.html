@@ -9,28 +9,43 @@
 <body>
 
 <div class="mainContainer">
-    <header>
-        <img src="./images/logo.svg" alt="logo" height="25px" class="logo">
-        <a href="login.html" class="login">
-
-        </a>
-        <div class="navbars">
-            <div class="tabs">
-                <ul>
-                    <li>
-                        <img src="images/home.svg" alt="home icon svg">
-                    </li>
-                </ul>
+    <div class="informationCenter">
+        <header>
+            <img src="./images/logo.svg" alt="logo" height="25px" class="logo">
+            <div class="home">
+                <img src="images/home.svg" alt="home icon svg">
+                <a href="#">Home</a>
             </div>
+            <div class="search">
+                <img src="/main/images/search(2).svg" alt="">
+                <span>Search</span>
+            </div>
+        </header>
+        <div class="library">
+            <div class="reciter luhaidan">Muhammad Al-Luhaidan</div>
+            <div class="reciter maher" id="maher">Maher Al-Muaiqaly</div>
+            <div class="reciter salah">Salah Al-Bukhatir</div>
+            <div class="reciter muhsin">Muhsin Hared</div>
         </div>
-    </header>
-    <div class="content">
     </div>
-    <div class="playingSection">
-        <audio controls class = "currentTrack">
-            <source src="" type="audio/mpeg">
-        </audio>
+    <div class="contentCenter">
+        <div class="userGreeting">
+            <h1>Salam</h1>
+            <h1 class="currentPlaying"></h1>
+        </div>
+        <div class="content">
+
+        </div>
     </div>
+</div>
+
+
+
+
+<div class="playingSection">
+    <audio controls class="currentTrack">
+        <source src="" type="audio/mpeg">
+    </audio>
     <div class="audio-player">
         <audio id="audio" controls>
             <source src="" type="audio/mpeg">
@@ -47,6 +62,7 @@
         <div id="total-time">0:00</div>
     </div>
 </div>
+
 
 <script src="/data/luhaidanAudios.js" type="module"></script>
 <script type="module" src="/data/audio.js"></script>
