@@ -13,11 +13,6 @@ body {
     background: #1E1E1E;
 }
 
-header {
-    width:300px;
-    height:40vh;
-    background-color: black;
-}
 
 .content {
     display: flex;
@@ -71,7 +66,7 @@ img {
 
 
 
-.library, header {
+.library {
     border-radius:10px;
     background:#2D2A2A;
     display:flex;
