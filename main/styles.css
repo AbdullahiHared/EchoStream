@@ -49,9 +49,6 @@ img {
     max-width: 100%;
 }
 
-.audioIcon {
-    width: 30px;
-}
 
 .library {
     background-color:#c2ac54;
@@ -81,19 +78,6 @@ img {
     justify-content: space-between;
     align-items: center;
     padding:20px;
-}
-
-
-
-
-.audio-player {
-    grid-area: audio-playing;
-    background: black;
-    height: 40px;
-}
-
-.currentTrack {
-    display: none;
 }
 
 .reciter {

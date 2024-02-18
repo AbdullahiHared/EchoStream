@@ -10,6 +10,7 @@ header {
     align-items: start;
     gap:30px;
     padding:30px;
+    border-radius:10px;
 }
 
 .home, .search-box {
